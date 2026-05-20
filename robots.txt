@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://urban-spice-cafe.vercel.app/sitemap.xml
