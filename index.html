@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================
+       ANALYTICS PLACEHOLDER - Add before </head>
+       Google Analytics: Replace GA_MEASUREMENT_ID
+       <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+       Google Search Console: Add verification meta tag here
+       ============================================ -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags - HOME PAGE DEFAULT -->
+  <title>Urban Spice Café | Best Café in Punjab – Coffee, Food & Ambience</title>
+  <meta name="description" content="Urban Spice Café – Punjab's finest café serving artisan coffee, gourmet food, and unforgettable experiences. Reserve your table today.">
+  <meta name="keywords" content="best café Punjab, coffee shop Amritsar, organic coffee, café near me, Urban Spice Café">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.urbanspicecafe.in/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Urban Spice Café | Best Café in Punjab">
+  <meta property="og:description" content="Experience artisan coffee, gourmet food and a cozy ambience at Urban Spice Café.">
+  <meta property="og:url" content="https://www.urbanspicecafe.in/">
+  <meta property="og:image" content="https://www.urbanspicecafe.in/images/og-image.jpg">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Urban Spice Café | Best Café in Punjab">
+  <meta name="twitter:description" content="Artisan coffee & gourmet food in the heart of Punjab.">
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Urban Spice Café",
+    "image": "https://www.urbanspicecafe.in/images/cafe.jpg",
+    "url": "https://www.urbanspicecafe.in",
+    "telephone": "+91-98765-43210",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "42, Lawrence Road",
+      "addressLocality": "Amritsar",
+      "addressRegion": "Punjab",
+      "postalCode": "143001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.6340,
+      "longitude": 74.8723
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens": "08:00","closes": "22:00"},
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Saturday","Sunday"],"opens": "09:00","closes": "23:00"}
+    ],
+    "servesCuisine": ["Coffee","Continental","Indian","Desserts"],
+    "priceRange": "₹₹",
+    "aggregateRating": {"@type": "AggregateRating","ratingValue": "4.8","reviewCount": "342"}
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============ CSS VARIABLES & RESET ============ */
+    :root {
+      --cream: #FAF6F0;
+      --ivory: #F2EBE0;
+      --warm-white: #FDF9F4;
+      --espresso: #1C0F08;
+      --dark-brown: #2D1A0E;
+      --medium-brown: #5C3317;
+      --caramel: #A0522D;
+      --gold: #C9903A;
+      --soft-gold: #E8C47A;
+      --sage: #7A8C6E;
+      --blush: #D4956A;
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body: 'DM Sans', sans-serif;
+      --shadow-soft: 0 4px 30px rgba(28,15,8,0.08);
+      --shadow-medium: 0 8px 40px rgba(28,15,8,0.14);
+      --shadow-strong: 0 16px 60px rgba(28,15,8,0.22);
+      --transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+      --border-radius: 2px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--espresso);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ============ PAGES SYSTEM ============ */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ============ TYPOGRAPHY ============ */
+    .display-xl { font-family: var(--font-display); font-size: clamp(3rem, 8vw, 7rem); font-weight: 300; line-height: 1.05; letter-spacing: -0.02em; }
+    .display-lg { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 4.5rem); font-weight: 300; line-height: 1.1; }
+    .display-md { font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 400; line-height: 1.2; }
+    .display-sm { font-family: var(--font-display); font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 400; }
+    .body-lg { font-size: 1.125rem; font-weight: 300; line-height: 1.75; }
+    .body-sm { font-size: 0.875rem; }
+    .label { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; }
+
+    /* ============ UTILITY ============ */
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(1.5rem, 5vw, 4rem); }
+    .section-pad { padding: clamp(5rem, 10vw, 9rem) 0; }
+    .text-center { text-align: center; }
+    .text-gold { color: var(--gold); }
+    .bg-espresso { background: var(--espresso); color: var(--cream); }
+    .bg-ivory { background: var(--ivory); }
+    .flex { display: flex; }
+    .grid { display: grid; }
+    .items-center { align-items: center; }
+    .gap-sm { gap: 1rem; }
+    .gap-md { gap: 2rem; }
+    .gap-lg { gap: 3rem; }
+
+    /* ============ BUTTONS ============ */
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 0.9rem 2.2rem; font-family: var(--font-body);
+      font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase;
+      font-weight: 500; cursor: pointer; border: none; transition: var(--transition);
+      position: relative; overflow: hidden;
+    }
+    .btn::before {
+      content: ''; position: absolute; inset: 0; transform: translateX(-100%);
+      transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    }
+    .btn:hover::before { transform: translateX(0); }
+    .btn-primary {
+      background: var(--espresso); color: var(--cream);
+    }
+    .btn-primary::before { background: var(--caramel); }
+    .btn-primary:hover { color: var(--cream); }
+    .btn-outline {
+      background: transparent; color: var(--espresso);
+      border: 1.5px solid var(--espresso);
+    }
+    .btn-outline::before { background: var(--espresso); }
+    .btn-outline:hover { color: var(--cream); }
+    .btn-ghost-light {
+      background: transparent; color: var(--cream);
+      border: 1.5px solid rgba(255,255,255,0.6);
+    }
+    .btn-ghost-light::before { background: var(--cream); }
+    .btn-ghost-light:hover { color: var(--espresso); }
+    .btn span { position: relative; z-index: 1; }
+
+    /* ============ NAVIGATION ============ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      transition: var(--transition);
+    }
+    nav.scrolled {
+      background: rgba(250,246,240,0.97);
+      box-shadow: 0 1px 30px rgba(28,15,8,0.1);
+      backdrop-filter: blur(12px);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.4rem clamp(1.5rem, 5vw, 4rem);
+      max-width: 1280px; margin: 0 auto;
+    }
+    .nav-logo {
+      font-family: var(--font-display); font-size: 1.5rem; font-weight: 600;
+      color: var(--cream); letter-spacing: 0.03em; transition: var(--transition);
+      cursor: pointer;
+    }
+    nav.scrolled .nav-logo { color: var(--espresso); }
+    .nav-logo span { color: var(--gold); font-style: italic; }
+    .nav-links {
+      display: flex; gap: 2.5rem; align-items: center;
+    }
+    .nav-links a {
+      font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: rgba(255,255,255,0.85); font-weight: 500; transition: var(--transition);
+      position: relative; padding-bottom: 2px; cursor: pointer;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: var(--gold); transform: scaleX(0); transition: transform 0.3s ease;
+      transform-origin: right;
+    }
+    .nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); transform-origin: left; }
+    nav.scrolled .nav-links a { color: var(--medium-brown); }
+    nav.scrolled .nav-links a:hover { color: var(--gold); }
+    .nav-cta .btn { padding: 0.65rem 1.6rem; font-size: 0.75rem; }
+    .nav-cta .btn-primary { background: var(--gold); }
+    .nav-cta .btn-primary::before { background: var(--medium-brown); }
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px; cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      width: 24px; height: 1.5px; background: var(--cream);
+      transition: var(--transition); display: block;
+    }
+    nav.scrolled .hamburger span { background: var(--espresso); }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    .mobile-menu {
+      display: none; position: fixed; inset: 0; background: var(--espresso);
+      z-index: 999; align-items: center; justify-content: center;
+      flex-direction: column; gap: 2.5rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: var(--font-display); font-size: 2.5rem; font-weight: 300;
+      color: var(--cream); transition: var(--transition); cursor: pointer;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+
+    /* ============ STICKY CTA ============ */
+    .sticky-cta {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 900;
+      transform: translateY(100px); opacity: 0; transition: var(--transition);
+    }
+    .sticky-cta.visible { transform: translateY(0); opacity: 1; }
+    .sticky-cta .btn {
+      background: var(--gold); color: var(--espresso);
+      box-shadow: 0 8px 30px rgba(201,144,58,0.4); border-radius: 50px;
+      padding: 1rem 2rem;
+    }
+
+    /* ============ HERO ============ */
+    .hero {
+      min-height: 100vh; position: relative;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #1C0F08 0%, #3d2210 40%, #5C3317 70%, #2D1A0E 100%);
+    }
+    .hero-pattern {
+      position: absolute; inset: 0; opacity: 0.06;
+      background-image: radial-gradient(circle at 2px 2px, var(--cream) 1px, transparent 0);
+      background-size: 40px 40px;
+    }
+    .hero-img-overlay {
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80&auto=format') center/cover no-repeat;
+      opacity: 0.22;
+      animation: heroZoom 20s ease-in-out infinite alternate;
+    }
+    @keyframes heroZoom {
+      from { transform: scale(1); }
+      to { transform: scale(1.08); }
+    }
+    .hero-grain {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .hero-content {
+      position: relative; z-index: 2; text-align: center;
+      max-width: 900px; padding: 2rem;
+    }
+    .hero-label {
+      display: inline-flex; align-items: center; gap: 1rem; margin-bottom: 2rem;
+      color: var(--soft-gold); font-size: 0.72rem; letter-spacing: 0.3em; text-transform: uppercase;
+      opacity: 0; animation: fadeUp 0.8s 0.3s ease forwards;
+    }
+    .hero-label::before, .hero-label::after {
+      content: ''; width: 40px; height: 1px; background: var(--gold);
+    }
+    .hero h1 {
+      font-family: var(--font-display); font-size: clamp(3rem, 9vw, 7.5rem);
+      font-weight: 300; line-height: 1.0; color: var(--cream); margin-bottom: 1.5rem;
+      opacity: 0; animation: fadeUp 0.9s 0.5s ease forwards;
+    }
+    .hero h1 em { font-style: italic; color: var(--soft-gold); font-weight: 400; }
+    .hero-sub {
+      color: rgba(250,246,240,0.7); font-size: 1.1rem; font-weight: 300;
+      max-width: 560px; margin: 0 auto 2.5rem;
+      opacity: 0; animation: fadeUp 0.9s 0.7s ease forwards;
+    }
+    .hero-btns {
+      display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap;
+      opacity: 0; animation: fadeUp 0.9s 0.9s ease forwards;
+    }
+    .hero-scroll {
+      position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      color: rgba(250,246,240,0.5); font-size: 0.65rem; letter-spacing: 0.2em;
+      text-transform: uppercase; animation: scrollBounce 2s ease-in-out infinite;
+    }
+    .hero-scroll svg { width: 20px; height: 20px; stroke: rgba(250,246,240,0.4); }
+    @keyframes scrollBounce { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(6px); } }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ============ MARQUEE STRIP ============ */
+    .marquee-strip {
+      background: var(--gold); overflow: hidden; padding: 0.9rem 0;
+    }
+    .marquee-track {
+      display: flex; white-space: nowrap;
+      animation: marquee 25s linear infinite;
+    }
+    .marquee-track span {
+      font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--espresso); font-weight: 500; padding: 0 3rem;
+    }
+    .marquee-track span::before { content: '✦'; margin-right: 3rem; }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* ============ SECTION HEADERS ============ */
+    .section-header { margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 0.8rem;
+      color: var(--gold); font-size: 0.7rem; letter-spacing: 0.25em;
+      text-transform: uppercase; margin-bottom: 1rem; font-weight: 500;
+    }
+    .section-label::before { content: ''; width: 30px; height: 1px; background: var(--gold); }
+
+    /* ============ FEATURED MENU ============ */
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5px; }
+    .menu-card {
+      position: relative; overflow: hidden; aspect-ratio: 3/4;
+      cursor: pointer; background: var(--dark-brown);
+    }
+    .menu-card-img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
+      filter: brightness(0.7);
+    }
+    .menu-card:hover .menu-card-img { transform: scale(1.07); filter: brightness(0.5); }
+    .menu-card-content {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 2rem 1.8rem;
+      background: linear-gradient(to top, rgba(28,15,8,0.9) 0%, transparent 100%);
+    }
+    .menu-card-tag {
+      font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.4rem; display: block;
+    }
+    .menu-card-title {
+      font-family: var(--font-display); font-size: 1.6rem; font-weight: 400;
+      color: var(--cream); line-height: 1.1;
+    }
+    .menu-card-hover {
+      position: absolute; inset: 0; display: flex; align-items: center;
+      justify-content: center; opacity: 0; transition: var(--transition);
+    }
+    .menu-card:hover .menu-card-hover { opacity: 1; }
+
+    /* ============ WHY CHOOSE US ============ */
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
+    .feature-card {
+      padding: 2.5rem 2rem; background: var(--warm-white);
+      border: 1px solid rgba(28,15,8,0.07); transition: var(--transition);
+      position: relative; overflow: hidden;
+    }
+    .feature-card::before {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+      background: var(--gold); transform: scaleX(0); transition: transform 0.4s ease;
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-medium); }
+    .feature-card:hover::before { transform: scaleX(1); }
+    .feature-icon { font-size: 2rem; margin-bottom: 1.2rem; display: block; }
+    .feature-title { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 0.7rem; }
+
+    /* ============ TESTIMONIALS ============ */
+    .testimonials-section { background: var(--espresso); position: relative; overflow: hidden; }
+    .testimonials-section::before {
+      content: '"'; position: absolute; top: -2rem; right: 5%; font-family: var(--font-display);
+      font-size: 25rem; color: rgba(255,255,255,0.03); font-weight: 300; line-height: 1;
+      pointer-events: none;
+    }
+    .testimonial-track { display: flex; gap: 1.5rem; overflow-x: auto; padding-bottom: 1rem; scroll-snap-type: x mandatory; scrollbar-width: none; }
+    .testimonial-track::-webkit-scrollbar { display: none; }
+    .testimonial-card {
+      min-width: 350px; padding: 2.5rem; background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08); flex-shrink: 0; scroll-snap-align: start;
+    }
+    .stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 1.2rem; letter-spacing: 2px; }
+    .testimonial-text {
+      font-family: var(--font-display); font-size: 1.15rem; font-style: italic;
+      color: rgba(250,246,240,0.85); line-height: 1.65; margin-bottom: 1.5rem;
+    }
+    .testimonial-author { display: flex; align-items: center; gap: 1rem; }
+    .author-avatar {
+      width: 44px; height: 44px; border-radius: 50%; background: var(--caramel);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 1.1rem; color: var(--cream); font-weight: 600;
+    }
+    .author-name { font-weight: 500; font-size: 0.9rem; color: var(--cream); }
+    .author-location { font-size: 0.75rem; color: rgba(250,246,240,0.5); }
+
+    /* ============ SPECIAL OFFERS ============ */
+    .offers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .offer-card {
+      padding: 2.5rem; background: var(--ivory); border-left: 4px solid var(--gold);
+      transition: var(--transition); cursor: pointer;
+    }
+    .offer-card:hover { transform: translateX(4px); background: var(--warm-white); }
+    .offer-badge {
+      display: inline-block; padding: 0.3rem 0.9rem; background: var(--gold);
+      color: var(--espresso); font-size: 0.7rem; letter-spacing: 0.15em;
+      text-transform: uppercase; font-weight: 600; margin-bottom: 1rem;
+    }
+    .offer-title { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.7rem; }
+    .offer-price { font-size: 1.8rem; font-weight: 300; color: var(--caramel); }
+    .offer-price span { font-size: 1rem; color: var(--medium-brown); text-decoration: line-through; margin-left: 0.5rem; }
+    .offer-timer { font-size: 0.75rem; color: var(--caramel); margin-top: 0.8rem; font-weight: 500; }
+
+    /* ============ INSTAGRAM PREVIEW ============ */
+    .insta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+    @media (min-width: 768px) { .insta-grid { grid-template-columns: repeat(6, 1fr); } }
+    .insta-item {
+      aspect-ratio: 1; overflow: hidden; cursor: pointer; position: relative; background: var(--dark-brown);
+    }
+    .insta-item img {
+      width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;
+      filter: brightness(0.85);
+    }
+    .insta-item:hover img { transform: scale(1.1); filter: brightness(0.6); }
+    .insta-overlay {
+      position: absolute; inset: 0; display: flex; align-items: center;
+      justify-content: center; opacity: 0; transition: var(--transition);
+    }
+    .insta-item:hover .insta-overlay { opacity: 1; }
+    .insta-overlay svg { width: 28px; height: 28px; stroke: var(--cream); }
+
+    /* ============ LOCATION ============ */
+    .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    @media (max-width: 768px) { .location-grid { grid-template-columns: 1fr; } }
+    .location-info { padding: clamp(3rem, 6vw, 6rem); background: var(--espresso); }
+    .location-info .section-label { color: var(--soft-gold); }
+    .location-info .display-md { color: var(--cream); }
+    .location-detail { display: flex; gap: 1rem; align-items: flex-start; margin: 1.5rem 0; }
+    .location-detail svg { width: 20px; height: 20px; stroke: var(--gold); flex-shrink: 0; margin-top: 2px; }
+    .location-detail p { color: rgba(250,246,240,0.75); font-size: 0.95rem; line-height: 1.6; }
+    .hours-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem 2rem; margin-top: 1.5rem; }
+    .hour-item { border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.6rem; }
+    .hour-day { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(250,246,240,0.5); }
+    .hour-time { color: var(--cream); font-weight: 300; }
+    .map-container { background: #e8ddd4; min-height: 500px; position: relative; overflow: hidden; }
+    .map-placeholder {
+      position: absolute; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 1rem;
+      background: linear-gradient(135deg, #d4c4b0 0%, #c8b896 100%);
+    }
+    .map-pin-icon { font-size: 3rem; }
+    .map-label { font-family: var(--font-display); font-size: 1.2rem; color: var(--medium-brown); }
+    .map-address { font-size: 0.85rem; color: var(--caramel); text-align: center; }
+    .map-open-btn {
+      margin-top: 1rem; background: var(--espresso); color: var(--cream);
+      padding: 0.7rem 1.8rem; font-size: 0.8rem; letter-spacing: 0.1em;
+      text-transform: uppercase; cursor: pointer; border: none; transition: var(--transition);
+    }
+    .map-open-btn:hover { background: var(--caramel); }
+
+    /* ============ NEWSLETTER ============ */
+    .newsletter-section {
+      background: linear-gradient(135deg, var(--caramel) 0%, var(--medium-brown) 100%);
+      position: relative; overflow: hidden;
+    }
+    .newsletter-section::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0);
+      background-size: 30px 30px;
+    }
+    .newsletter-inner { position: relative; text-align: center; }
+    .newsletter-form { display: flex; gap: 0; max-width: 480px; margin: 2rem auto 0; }
+    .newsletter-input {
+      flex: 1; padding: 1rem 1.4rem; background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3); border-right: none;
+      color: var(--cream); font-family: var(--font-body); font-size: 0.9rem;
+      outline: none; backdrop-filter: blur(8px);
+    }
+    .newsletter-input::placeholder { color: rgba(255,255,255,0.6); }
+    .newsletter-btn {
+      padding: 1rem 1.8rem; background: var(--espresso); color: var(--cream);
+      border: none; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase;
+      cursor: pointer; transition: var(--transition); white-space: nowrap;
+    }
+    .newsletter-btn:hover { background: var(--dark-brown); }
+
+    /* ============ FOOTER ============ */
+    footer { background: var(--dark-brown); color: var(--cream); padding: 5rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 3rem; margin-bottom: 4rem; }
+    @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
+    .footer-brand { }
+    .footer-logo { font-family: var(--font-display); font-size: 1.6rem; color: var(--cream); margin-bottom: 1rem; cursor: pointer; }
+    .footer-logo span { color: var(--gold); font-style: italic; }
+    .footer-desc { color: rgba(250,246,240,0.55); font-size: 0.9rem; line-height: 1.7; max-width: 280px; margin-bottom: 1.5rem; }
+    .social-links { display: flex; gap: 1rem; }
+    .social-link {
+      width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.15);
+      display: flex; align-items: center; justify-content: center;
+      transition: var(--transition); cursor: pointer;
+    }
+    .social-link:hover { background: var(--gold); border-color: var(--gold); }
+    .social-link svg { width: 16px; height: 16px; stroke: var(--cream); }
+    .footer-col h4 {
+      font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.5rem; font-weight: 500;
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 0.7rem; }
+    .footer-col ul a, .footer-col ul span {
+      color: rgba(250,246,240,0.55); font-size: 0.88rem; transition: var(--transition);
+      cursor: pointer;
+    }
+    .footer-col ul a:hover { color: var(--cream); padding-left: 4px; }
+    .footer-contact-item { display: flex; gap: 0.8rem; margin-bottom: 0.8rem; }
+    .footer-contact-item svg { width: 16px; height: 16px; stroke: var(--gold); flex-shrink: 0; margin-top: 2px; }
+    .footer-contact-item span { color: rgba(250,246,240,0.55); font-size: 0.85rem; line-height: 1.5; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07); padding-top: 2rem;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-bottom p { color: rgba(250,246,240,0.35); font-size: 0.8rem; }
+    .footer-legal { display: flex; gap: 1.5rem; }
+    .footer-legal a { color: rgba(250,246,240,0.35); font-size: 0.8rem; transition: var(--transition); cursor: pointer; }
+    .footer-legal a:hover { color: var(--cream); }
+
+    /* ============ PAGE HERO (inner pages) ============ */
+    .page-hero {
+      height: 50vh; min-height: 380px; position: relative;
+      display: flex; align-items: flex-end;
+      background: linear-gradient(135deg, #1C0F08, #3d2210);
+      overflow: hidden;
+    }
+    .page-hero-bg {
+      position: absolute; inset: 0; opacity: 0.25;
+      background-size: cover; background-position: center;
+    }
+    .page-hero-content {
+      position: relative; z-index: 2; padding: 4rem clamp(1.5rem, 5vw, 4rem);
+      max-width: 1280px; margin: 0 auto; width: 100%;
+    }
+    .page-hero-content h1 { color: var(--cream); margin: 0.5rem 0; }
+    .breadcrumb { display: flex; gap: 0.6rem; align-items: center; }
+    .breadcrumb span { font-size: 0.75rem; letter-spacing: 0.1em; color: rgba(250,246,240,0.5); text-transform: uppercase; cursor: pointer; }
+    .breadcrumb span.sep { color: var(--gold); }
+    .breadcrumb span.current { color: var(--gold); }
+
+    /* ============ MENU PAGE ============ */
+    .menu-filter { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; }
+    .filter-btn {
+      padding: 0.55rem 1.4rem; font-size: 0.78rem; letter-spacing: 0.1em;
+      text-transform: uppercase; border: 1px solid rgba(28,15,8,0.15);
+      background: transparent; cursor: pointer; transition: var(--transition);
+      font-family: var(--font-body); color: var(--medium-brown);
+    }
+    .filter-btn.active, .filter-btn:hover { background: var(--espresso); color: var(--cream); border-color: var(--espresso); }
+    .menu-items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+    .menu-item-card {
+      background: var(--warm-white); transition: var(--transition);
+      overflow: hidden; border: 1px solid rgba(28,15,8,0.07);
+    }
+    .menu-item-card:hover { box-shadow: var(--shadow-medium); transform: translateY(-3px); }
+    .menu-item-img { height: 200px; overflow: hidden; background: var(--ivory); }
+    .menu-item-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .menu-item-card:hover .menu-item-img img { transform: scale(1.05); }
+    .menu-item-body { padding: 1.4rem; }
+    .menu-item-category { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+    .menu-item-name { font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 0.4rem; }
+    .menu-item-desc { font-size: 0.85rem; color: rgba(28,15,8,0.6); line-height: 1.55; margin-bottom: 1rem; }
+    .menu-item-footer { display: flex; justify-content: space-between; align-items: center; }
+    .menu-item-price { font-size: 1.1rem; font-weight: 500; color: var(--caramel); }
+    .menu-item-add {
+      width: 32px; height: 32px; background: var(--espresso); color: var(--cream);
+      display: flex; align-items: center; justify-content: center; cursor: pointer;
+      transition: var(--transition); font-size: 1.2rem; border: none;
+    }
+    .menu-item-add:hover { background: var(--gold); }
+
+    /* ============ ABOUT PAGE ============ */
+    .about-story { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+    @media (max-width: 768px) { .about-story { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .about-img-wrap { position: relative; }
+    .about-img-main { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+    .about-img-accent {
+      position: absolute; bottom: -2rem; right: -2rem; width: 55%;
+      aspect-ratio: 1; object-fit: cover; border: 6px solid var(--cream);
+    }
+    .stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; margin: 3rem 0; }
+    .stat-item { text-align: center; }
+    .stat-num { font-family: var(--font-display); font-size: 3.5rem; font-weight: 300; color: var(--caramel); line-height: 1; }
+    .stat-label { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--medium-brown); margin-top: 0.3rem; }
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+    .team-card { text-align: center; }
+    .team-photo { width: 160px; height: 160px; border-radius: 50%; overflow: hidden; margin: 0 auto 1rem; background: var(--ivory); }
+    .team-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .team-name { font-family: var(--font-display); font-size: 1.2rem; }
+    .team-role { font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 0.2rem; }
+
+    /* ============ BLOG PAGE ============ */
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; }
+    .blog-card { background: var(--warm-white); overflow: hidden; transition: var(--transition); }
+    .blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-medium); }
+    .blog-img { height: 220px; overflow: hidden; background: var(--ivory); position: relative; }
+    .blog-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+    .blog-card:hover .blog-img img { transform: scale(1.04); }
+    .blog-cat { position: absolute; top: 1rem; left: 1rem; background: var(--gold); color: var(--espresso); font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.3rem 0.8rem; font-weight: 600; }
+    .blog-body { padding: 1.8rem; }
+    .blog-meta { font-size: 0.75rem; color: rgba(28,15,8,0.45); margin-bottom: 0.8rem; }
+    .blog-title { font-family: var(--font-display); font-size: 1.35rem; line-height: 1.3; margin-bottom: 0.7rem; cursor: pointer; }
+    .blog-title:hover { color: var(--caramel); }
+    .blog-excerpt { font-size: 0.87rem; color: rgba(28,15,8,0.6); line-height: 1.6; margin-bottom: 1.2rem; }
+    .blog-read-more { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--caramel); font-weight: 500; display: inline-flex; align-items: center; gap: 0.4rem; }
+
+    /* ============ CONTACT PAGE ============ */
+    .contact-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 5rem; }
+    @media (max-width: 768px) { .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-group label { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--medium-brown); font-weight: 500; }
+    .form-input, .form-textarea, .form-select {
+      padding: 0.85rem 1rem; border: 1px solid rgba(28,15,8,0.15);
+      background: var(--warm-white); font-family: var(--font-body); font-size: 0.92rem;
+      color: var(--espresso); outline: none; transition: border-color 0.25s;
+      -webkit-appearance: none;
+    }
+    .form-input:focus, .form-textarea:focus, .form-select:focus { border-color: var(--gold); }
+    .form-textarea { min-height: 130px; resize: vertical; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .faq-item { border-bottom: 1px solid rgba(28,15,8,0.1); padding: 1.2rem 0; cursor: pointer; }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; }
+    .faq-q p { font-weight: 500; font-size: 0.95rem; }
+    .faq-q span { color: var(--gold); font-size: 1.3rem; transition: transform 0.3s; }
+    .faq-a { font-size: 0.88rem; color: rgba(28,15,8,0.6); line-height: 1.65; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s; }
+    .faq-item.open .faq-a { max-height: 200px; padding-top: 0.8rem; }
+    .faq-item.open .faq-q span { transform: rotate(45deg); }
+
+    /* ============ RESERVATION PAGE ============ */
+    .reservation-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: start; }
+    @media (max-width: 768px) { .reservation-layout { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .res-info-card { background: var(--espresso); padding: 3rem; color: var(--cream); }
+    .res-perks { margin-top: 2rem; }
+    .res-perk { display: flex; gap: 1rem; margin-bottom: 1.2rem; align-items: flex-start; }
+    .res-perk-icon { width: 40px; height: 40px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.1rem; }
+    .res-perk-text p { color: rgba(250,246,240,0.55); font-size: 0.85rem; margin-top: 0.2rem; }
+    .res-perk-text strong { font-size: 0.9rem; color: var(--cream); }
+    .guest-selector { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem; }
+    .guest-btn {
+      width: 44px; height: 44px; border: 1px solid rgba(28,15,8,0.15);
+      background: transparent; font-family: var(--font-body); font-size: 0.9rem;
+      cursor: pointer; transition: var(--transition); color: var(--espresso);
+    }
+    .guest-btn.selected, .guest-btn:hover { background: var(--espresso); color: var(--cream); border-color: var(--espresso); }
+    .progress-steps { display: flex; gap: 0; margin-bottom: 2.5rem; }
+    .step { flex: 1; text-align: center; position: relative; }
+    .step::before { content: ''; position: absolute; top: 14px; left: 50%; right: -50%; height: 1px; background: rgba(28,15,8,0.15); z-index: 0; }
+    .step:last-child::before { display: none; }
+    .step-dot { width: 28px; height: 28px; border-radius: 50%; background: rgba(28,15,8,0.1); border: 1px solid rgba(28,15,8,0.15); display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 0.75rem; font-weight: 600; position: relative; z-index: 1; background: var(--cream); transition: var(--transition); }
+    .step.active .step-dot { background: var(--espresso); color: var(--cream); border-color: var(--espresso); }
+    .step.done .step-dot { background: var(--gold); border-color: var(--gold); color: var(--espresso); }
+    .step-label { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(28,15,8,0.45); }
+    .step.active .step-label { color: var(--espresso); font-weight: 500; }
+
+    /* ============ GALLERY PAGE ============ */
+    .gallery-masonry {
+      columns: 3; gap: 6px;
+    }
+    @media (max-width: 768px) { .gallery-masonry { columns: 2; } }
+    @media (max-width: 480px) { .gallery-masonry { columns: 1; } }
+    .gallery-item {
+      break-inside: avoid; margin-bottom: 6px; overflow: hidden;
+      position: relative; cursor: pointer; background: var(--dark-brown);
+    }
+    .gallery-item img {
+      width: 100%; display: block; transition: transform 0.5s ease, filter 0.3s;
+      filter: brightness(0.9);
+    }
+    .gallery-item:hover img { transform: scale(1.04); filter: brightness(0.7); }
+    .gallery-overlay {
+      position: absolute; inset: 0; display: flex; align-items: center;
+      justify-content: center; opacity: 0; transition: var(--transition);
+      background: rgba(28,15,8,0.3);
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay svg { width: 30px; height: 30px; stroke: var(--cream); }
+
+    /* ============ LIGHTBOX ============ */
+    .lightbox {
+      position: fixed; inset: 0; background: rgba(10,5,2,0.96); z-index: 2000;
+      display: none; align-items: center; justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+    .lightbox-close { position: absolute; top: 2rem; right: 2rem; background: none; border: none; cursor: pointer; }
+    .lightbox-close svg { width: 28px; height: 28px; stroke: var(--cream); }
+
+    /* ============ ANIMATIONS ============ */
+    .reveal {
+      opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* ============ DIVIDER ============ */
+    .ornament { display: flex; align-items: center; gap: 1.5rem; margin: 2rem 0; }
+    .ornament::before, .ornament::after { content: ''; flex: 1; height: 1px; background: rgba(28,15,8,0.12); }
+    .ornament span { font-family: var(--font-display); font-size: 1.2rem; color: var(--gold); }
+
+    /* ============ RESPONSIVE ============ */
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .newsletter-form { flex-direction: column; }
+      .newsletter-input { border-right: 1px solid rgba(255,255,255,0.3); border-bottom: none; }
+      .stats-row { grid-template-columns: 1fr 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .menu-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="showPage('home')">Urban <span>Spice</span> Café</div>
+    <div class="nav-links">
+      <a onclick="showPage('home')" class="active" data-page="home">Home</a>
+      <a onclick="showPage('menu')" data-page="menu">Menu</a>
+      <a onclick="showPage('about')" data-page="about">About</a>
+      <a onclick="showPage('blog')" data-page="blog">Blog</a>
+      <a onclick="showPage('gallery')" data-page="gallery">Gallery</a>
+      <a onclick="showPage('contact')" data-page="contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <button class="btn btn-primary" onclick="showPage('reservation')"><span>Reserve Table</span></button>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="showPage('home'); toggleMobileMenu()">Home</a>
+  <a onclick="showPage('menu'); toggleMobileMenu()">Menu</a>
+  <a onclick="showPage('about'); toggleMobileMenu()">About</a>
+  <a onclick="showPage('blog'); toggleMobileMenu()">Blog</a>
+  <a onclick="showPage('gallery'); toggleMobileMenu()">Gallery</a>
+  <a onclick="showPage('contact'); toggleMobileMenu()">Contact</a>
+  <a onclick="showPage('reservation'); toggleMobileMenu()">Reserve Table</a>
+</div>
+
+<!-- Sticky CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <button class="btn" onclick="showPage('reservation')"><span>🪑 Reserve Now</span></button>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <img id="lightboxImg" src="" alt="Gallery image">
+</div>
+
+<!-- ========================================
+     PAGE: HOME
+     ======================================== -->
+<div class="page active" id="page-home">
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Welcome to Urban Spice Café">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-img-overlay" role="img" aria-label="Cozy café interior with warm lighting"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-content">
+      <div class="hero-label">Est. 2018 · Amritsar, Punjab</div>
+      <h1>Experience the <em>Finest</em><br>Café in Town</h1>
+      <p class="hero-sub">Where every cup tells a story. Artisan coffee, gourmet flavors, and a sanctuary of warmth in the heart of Punjab.</p>
+      <div class="hero-btns">
+        <button class="btn btn-ghost-light" onclick="showPage('reservation')"><span>Reserve a Table</span></button>
+        <button class="btn btn-outline" style="color:var(--cream);border-color:rgba(255,255,255,0.4)" onclick="showPage('menu')"><span>View Our Menu</span></button>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Artisan Coffee</span><span>Organic Ingredients</span><span>Gourmet Breakfast</span>
+      <span>Free WiFi</span><span>Live Music Saturdays</span><span>Specialty Teas</span>
+      <span>Seasonal Menu</span><span>Al Fresco Seating</span>
+      <span>Artisan Coffee</span><span>Organic Ingredients</span><span>Gourmet Breakfast</span>
+      <span>Free WiFi</span><span>Live Music Saturdays</span><span>Specialty Teas</span>
+      <span>Seasonal Menu</span><span>Al Fresco Seating</span>
+    </div>
+  </div>
+
+  <!-- Featured Menu -->
+  <section class="section-pad" aria-labelledby="featured-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Our Specialties</div>
+        <h2 class="display-lg" id="featured-heading">A Taste of<br><em style="font-style:italic;color:var(--caramel)">Everything Beautiful</em></h2>
+      </div>
+      <div class="menu-grid reveal">
+        <article class="menu-card" onclick="showPage('menu')" role="link" aria-label="View Coffee menu">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=75&auto=format" alt="Artisan espresso coffee with latte art at Urban Spice Café" loading="lazy">
+          <div class="menu-card-content">
+            <span class="menu-card-tag">Signature</span>
+            <div class="menu-card-title">Artisan<br>Coffee</div>
+          </div>
+          <div class="menu-card-hover"><button class="btn btn-ghost-light" style="pointer-events:none"><span>Explore</span></button></div>
+        </article>
+        <article class="menu-card" onclick="showPage('menu')" role="link" aria-label="View Desserts menu">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&q=75&auto=format" alt="Freshly baked pastries and desserts at Urban Spice Café" loading="lazy">
+          <div class="menu-card-content">
+            <span class="menu-card-tag">Indulge</span>
+            <div class="menu-card-title">Sweet<br>Desserts</div>
+          </div>
+          <div class="menu-card-hover"><button class="btn btn-ghost-light" style="pointer-events:none"><span>Explore</span></button></div>
+        </article>
+        <article class="menu-card" onclick="showPage('menu')" role="link" aria-label="View Breakfast menu">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&q=75&auto=format" alt="Gourmet breakfast spread at Urban Spice Café" loading="lazy">
+          <div class="menu-card-content">
+            <span class="menu-card-tag">Morning</span>
+            <div class="menu-card-title">Gourmet<br>Breakfast</div>
+          </div>
+          <div class="menu-card-hover"><button class="btn btn-ghost-light" style="pointer-events:none"><span>Explore</span></button></div>
+        </article>
+        <article class="menu-card" onclick="showPage('menu')" role="link" aria-label="View Signature dishes menu">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=75&auto=format" alt="Signature main course dishes at Urban Spice Café" loading="lazy">
+          <div class="menu-card-content">
+            <span class="menu-card-tag">Chef's Special</span>
+            <div class="menu-card-title">Signature<br>Dishes</div>
+          </div>
+          <div class="menu-card-hover"><button class="btn btn-ghost-light" style="pointer-events:none"><span>Explore</span></button></div>
+        </article>
+      </div>
+      <div class="text-center" style="margin-top:2.5rem">
+        <button class="btn btn-outline" onclick="showPage('menu')"><span>View Full Menu</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section-pad bg-ivory" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <div class="section-label" style="justify-content:center">Why Urban Spice</div>
+        <h2 class="display-lg" id="why-heading">More Than<br>Just Coffee</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <span class="feature-icon">🌿</span>
+          <h3 class="feature-title">100% Organic</h3>
+          <p style="font-size:0.9rem;color:rgba(28,15,8,0.65);line-height:1.65">Every ingredient is sourced from certified organic farms. We believe great taste starts with pure, natural produce.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <span class="feature-icon">🛋️</span>
+          <h3 class="feature-title">Cozy Ambience</h3>
+          <p style="font-size:0.9rem;color:rgba(28,15,8,0.65);line-height:1.65">Thoughtfully designed interiors create a warm, welcoming space perfect for work, dates, or quiet reflection.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <span class="feature-icon">📶</span>
+          <h3 class="feature-title">High-Speed WiFi</h3>
+          <p style="font-size:0.9rem;color:rgba(28,15,8,0.65);line-height:1.65">Stay connected with complimentary high-speed internet. Your perfect remote workspace awaits.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">⚡</span>
+          <h3 class="feature-title">Swift Service</h3>
+          <p style="font-size:0.9rem;color:rgba(28,15,8,0.65);line-height:1.65">From order to table in minutes. Our trained baristas and chefs ensure you're never kept waiting long.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section-pad testimonials-section" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label" style="color:var(--soft-gold)">Guest Reviews</div>
+        <h2 class="display-lg" id="testimonials-heading" style="color:var(--cream)">Words from<br><em style="color:var(--soft-gold)">Our Guests</em></h2>
+      </div>
+      <div class="testimonial-track" role="list">
+        <div class="testimonial-card reveal" role="listitem">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Hands down the best café experience in Punjab. The cortado here is absolutely transformative — complex, smooth, and served with such care."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">P</div>
+            <div><div class="author-name">Priya Sharma</div><div class="author-location">Amritsar, Punjab</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1" role="listitem">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"I've been to cafés across India and Urban Spice stands apart. The ambience, the food, the attention to detail — it's a true premium experience."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div><div class="author-name">Arjun Mehta</div><div class="author-location">Chandigarh, Punjab</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2" role="listitem">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The avocado toast and cold brew combo is a revelation. Perfect place to work from in the mornings — spacious, quiet, and the WiFi is superb."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div><div class="author-name">Riya Kapoor</div><div class="author-location">Ludhiana, Punjab</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-3" role="listitem">
+          <div class="stars">★★★★☆</div>
+          <p class="testimonial-text">"The staff at Urban Spice know your name by the third visit. That warmth and hospitality is genuinely rare. Absolutely love this place."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">K</div>
+            <div><div class="author-name">Kabir Singh</div><div class="author-location">Jalandhar, Punjab</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers -->
+  <section class="section-pad" aria-labelledby="offers-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Limited Time</div>
+        <h2 class="display-lg" id="offers-heading">Special<br>Offers</h2>
+      </div>
+      <div class="offers-grid">
+        <article class="offer-card reveal reveal-delay-1">
+          <div class="offer-badge">Morning Deal</div>
+          <h3 class="offer-title">Breakfast Combo</h3>
+          <p style="font-size:0.88rem;color:rgba(28,15,8,0.6);margin-bottom:1rem">Any breakfast item + specialty coffee of your choice. Available Mon–Fri before 11am.</p>
+          <div class="offer-price">₹299 <span>₹449</span></div>
+          <div class="offer-timer">⏰ Offer ends 30 June 2025</div>
+        </article>
+        <article class="offer-card reveal reveal-delay-2">
+          <div class="offer-badge">Weekend Special</div>
+          <h3 class="offer-title">Table for Two</h3>
+          <p style="font-size:0.88rem;color:rgba(28,15,8,0.6);margin-bottom:1rem">Two mains + two beverages + a shared dessert. Perfect for a weekend date or outing.</p>
+          <div class="offer-price">₹799 <span>₹1,199</span></div>
+          <div class="offer-timer">⏰ Saturdays & Sundays only</div>
+        </article>
+        <article class="offer-card reveal reveal-delay-3">
+          <div class="offer-badge">Loyalty Perk</div>
+          <h3 class="offer-title">Free 5th Coffee</h3>
+          <p style="font-size:0.88rem;color:rgba(28,15,8,0.6);margin-bottom:1rem">Join our loyalty program and get your fifth coffee free. Every visit earns you points.</p>
+          <div class="offer-price">FREE</div>
+          <div class="offer-timer">📲 Download our app to start</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Preview -->
+  <section aria-labelledby="insta-heading">
+    <div class="section-header text-center reveal" style="padding:4rem 0 2rem">
+      <div class="section-label" style="justify-content:center">Follow Us</div>
+      <h2 class="display-md" id="insta-heading">@urbanspicecafe</h2>
+    </div>
+    <div class="insta-grid" role="list">
+      <div class="insta-item reveal" role="listitem">
+        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=70&auto=format" alt="Latte art on cappuccino at Urban Spice Café" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg></div>
+      </div>
+      <div class="insta-item reveal reveal-delay-1" role="listitem">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&q=70&auto=format" alt="Coffee beans and brewing equipment" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg></div>
+      </div>
+      <div class="insta-item reveal reveal-delay-2" role="listitem">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=70&auto=format" alt="Croissants and pastries on wooden table" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg></div>
+      </div>
+      <div class="insta-item reveal reveal-delay-3" role="listitem">
+        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&q=70&auto=format" alt="Cozy café seating area with warm lighting" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg></div>
+      </div>
+      <div class="insta-item reveal" role="listitem">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=70&auto=format" alt="Chocolate dessert plating at Urban Spice Café" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg></div>
+      </div>
+      <div class="insta-item reveal reveal-delay-1" role="listitem">
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&q=70&auto=format" alt="Specialty iced drinks at Urban Spice Café" loading="lazy">
+        <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section aria-labelledby="location-heading">
+    <div class="location-grid">
+      <div class="location-info">
+        <div class="section-label">Find Us</div>
+        <h2 class="display-md" id="location-heading" style="color:var(--cream);margin:0.8rem 0 1.5rem">Come Visit<br><em style="font-style:italic;color:var(--soft-gold)">Urban Spice</em></h2>
+        <div class="location-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <p>42, Lawrence Road, Civil Lines<br>Amritsar, Punjab – 143001</p>
+        </div>
+        <div class="location-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.02 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <p>+91 98765 43210</p>
+        </div>
+        <div class="location-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <p>hello@urbanspicecafe.in</p>
+        </div>
+        <div class="hours-grid">
+          <div class="hour-item"><div class="hour-day">Mon – Fri</div><div class="hour-time">8:00 AM – 10:00 PM</div></div>
+          <div class="hour-item"><div class="hour-day">Saturday</div><div class="hour-time">9:00 AM – 11:00 PM</div></div>
+          <div class="hour-item"><div class="hour-day">Sunday</div><div class="hour-time">9:00 AM – 11:00 PM</div></div>
+          <div class="hour-item"><div class="hour-day">Holidays</div><div class="hour-time">10:00 AM – 9:00 PM</div></div>
+        </div>
+      </div>
+      <div class="map-container" role="complementary" aria-label="Map location of Urban Spice Café">
+        <div class="map-placeholder">
+          <div class="map-pin-icon">📍</div>
+          <div class="map-label">Urban Spice Café</div>
+          <div class="map-address">42, Lawrence Road, Civil Lines<br>Amritsar, Punjab 143001</div>
+          <!-- Replace with actual Google Maps embed -->
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=..."></iframe> -->
+          <button class="map-open-btn" onclick="window.open('https://maps.google.com/?q=Amritsar,Punjab','_blank')">Open in Google Maps</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section-pad newsletter-section" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="section-label reveal" style="color:rgba(255,255,255,0.7);justify-content:center">Stay Connected</div>
+        <h2 class="display-md reveal" id="newsletter-heading" style="color:var(--cream);margin:0.8rem 0 0.5rem">Get Exclusive Offers<br>& New Menu Alerts</h2>
+        <p class="reveal" style="color:rgba(255,255,255,0.7);font-size:0.95rem">Join 2,400+ café lovers who get our weekly newsletter. No spam, ever.</p>
+        <!-- CONVERSION TRACKING POINT: Newsletter signup form -->
+        <form class="newsletter-form reveal" onsubmit="handleNewsletterSubmit(event)" novalidate>
+          <input class="newsletter-input" type="email" placeholder="Your email address" aria-label="Email address for newsletter" required>
+          <button class="newsletter-btn" type="submit">Subscribe</button>
+        </form>
+        <p class="reveal" style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:0.8rem">By subscribing, you agree to our Privacy Policy. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo" onclick="showPage('home')">Urban <span>Spice</span> Café</div>
+          <p class="footer-desc">Punjab's finest café experience since 2018. Artisan coffee, organic food, and genuine warmth — every single day.</p>
+          <div class="social-links" aria-label="Social media links">
+            <a class="social-link" href="#" aria-label="Instagram" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a class="social-link" href="#" aria-label="Facebook" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a class="social-link" href="#" aria-label="Twitter/X" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a class="social-link" href="#" aria-label="YouTube" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a onclick="showPage('home')">Home</a></li>
+            <li><a onclick="showPage('menu')">Our Menu</a></li>
+            <li><a onclick="showPage('about')">About Us</a></li>
+            <li><a onclick="showPage('gallery')">Gallery</a></li>
+            <li><a onclick="showPage('blog')">Blog</a></li>
+            <li><a onclick="showPage('reservation')">Reserve Table</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a onclick="showPage('contact')">Contact Us</a></li>
+            <li><span>Privacy Policy</span></li>
+            <li><span>Terms of Service</span></li>
+            <li><span>Allergen Info</span></li>
+            <li><span>Careers</span></li>
+            <li><span>Press & Media</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            <span>42, Lawrence Road, Civil Lines, Amritsar, Punjab 143001</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8"/></svg>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>
+            <span>hello@urbanspicecafe.in</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Urban Spice Café, Amritsar, Punjab, India. All rights reserved.</p>
+        <div class="footer-legal">
+          <a>Privacy Policy</a>
+          <a>Terms</a>
+          <a>Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========================================
+     PAGE: MENU
+     ======================================== -->
+<div class="page" id="page-menu">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&q=70&auto=format')"></div>
+    <div style="position:absolute;inset:0;background:rgba(28,15,8,0.6)"></div>
+    <div class="page-hero-content">
+      <div class="breadcrumb"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">Menu</span></div>
+      <h1 class="display-lg">Our Menu</h1>
+    </div>
+  </div>
+  <section class="section-pad">
+    <div class="container">
+      <div class="menu-filter" role="tablist" aria-label="Menu categories">
+        <button class="filter-btn active" onclick="filterMenu('all',this)" role="tab">All</button>
+        <button class="filter-btn" onclick="filterMenu('coffee',this)" role="tab">Coffee</button>
+        <button class="filter-btn" onclick="filterMenu('tea',this)" role="tab">Tea</button>
+        <button class="filter-btn" onclick="filterMenu('cold',this)" role="tab">Cold Beverages</button>
+        <button class="filter-btn" onclick="filterMenu('desserts',this)" role="tab">Desserts</button>
+        <button class="filter-btn" onclick="filterMenu('breakfast',this)" role="tab">Breakfast</button>
+        <button class="filter-btn" onclick="filterMenu('main',this)" role="tab">Main Course</button>
+      </div>
+      <div class="menu-items-grid" id="menuGrid"></div>
+    </div>
+  </section>
+  <section class="section-pad bg-ivory">
+    <div class="container text-center">
+      <div class="section-label" style="justify-content:center">Book Your Spot</div>
+      <h2 class="display-md" style="margin:0.8rem 0 1rem">Ready to Dine In?</h2>
+      <p style="color:rgba(28,15,8,0.6);max-width:400px;margin:0 auto 2rem;font-size:0.95rem">Reserve your table for an elevated dine-in experience at Urban Spice Café.</p>
+      <button class="btn btn-primary" onclick="showPage('reservation')"><span>Reserve a Table</span></button>
+    </div>
+  </section>
+  <!-- Shared Footer (mini) -->
+  <div style="background:var(--dark-brown);padding:2rem 0;text-align:center">
+    <p style="color:rgba(250,246,240,0.35);font-size:0.8rem">© 2025 Urban Spice Café · <span style="color:var(--gold);cursor:pointer" onclick="showPage('home')">Home</span> · <span style="color:var(--gold);cursor:pointer" onclick="showPage('contact')">Contact</span></p>
+  </div>
+</div>
+
+<!-- ========================================
+     PAGE: ABOUT
+     ======================================== -->
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&q=70&auto=format')"></div>
+    <div style="position:absolute;inset:0;background:rgba(28,15,8,0.55)"></div>
+    <div class="page-hero-content">
+      <div class="breadcrumb"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">About</span></div>
+      <h1 class="display-lg">Our Story</h1>
+    </div>
+  </div>
+  <section class="section-pad">
+    <div class="container">
+      <div class="about-story reveal">
+        <div class="about-img-wrap">
+          <img class="about-img-main" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=75&auto=format" alt="Urban Spice Café interior showing warm cozy seating" loading="lazy">
+          <img class="about-img-accent" src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=400&q=75&auto=format" alt="Founder Arjit Batra behind the espresso bar" loading="lazy">
+        </div>
+        <div>
+          <div class="section-label">Brand Story</div>
+          <h2 class="display-md" style="margin:0.8rem 0 1.5rem">Born from a<br><em style="font-style:italic;color:var(--caramel)">Passion for Craft</em></h2>
+          <p class="body-lg" style="color:rgba(28,15,8,0.7);margin-bottom:1.5rem">Urban Spice Café was born in 2018 when founder Arjit Batra returned from a year of travelling through coffee farms in Colombia, Ethiopia, and Vietnam with one obsession: bringing the world's finest coffee culture to his hometown of Amritsar.</p>
+          <p style="color:rgba(28,15,8,0.6);line-height:1.75;margin-bottom:2rem">What started as a modest 20-seat café on Lawrence Road has grown into Punjab's most celebrated coffee destination — a place where the aroma of freshly roasted beans mingles with the warmth of Punjabi hospitality.</p>
+          <div class="stats-row">
+            <div class="stat-item"><div class="stat-num">7</div><div class="stat-label">Years of<br>Excellence</div></div>
+            <div class="stat-item"><div class="stat-num">342</div><div class="stat-label">5-Star<br>Reviews</div></div>
+            <div class="stat-item"><div class="stat-num">45+</div><div class="stat-label">Menu<br>Items</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-pad bg-ivory">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <div class="section-label" style="justify-content:center">Our Values</div>
+        <h2 class="display-md">Mission & Vision</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:800px;margin:0 auto" class="reveal">
+        <div style="padding:2.5rem;background:var(--warm-white);border-top:3px solid var(--gold)">
+          <h3 style="font-family:var(--font-display);font-size:1.4rem;margin-bottom:1rem">Our Mission</h3>
+          <p style="font-size:0.9rem;color:rgba(28,15,8,0.65);line-height:1.75">To create a community space where exceptional coffee, honest food, and genuine human connection come together. We exist to make every guest feel profoundly welcomed.</p>
+        </div>
+        <div style="padding:2.5rem;background:var(--warm-white);border-top:3px solid var(--caramel)">
+          <h3 style="font-family:var(--font-display);font-size:1.4rem;margin-bottom:1rem">Our Vision</h3>
+          <p style="font-size:0.9rem;color:rgba(28,15,8,0.65);line-height:1.75">To be the most beloved café brand in North India, recognised for quality that never compromises, sustainability that inspires, and an experience that transcends the ordinary.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-pad bg-espresso">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <div class="section-label" style="color:var(--soft-gold);justify-content:center">Sustainability</div>
+        <h2 class="display-md" style="color:var(--cream)">Earth-First Practices</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem" class="reveal">
+        <div style="text-align:center;padding:2rem">
+          <div style="font-size:2.5rem;margin-bottom:1rem">♻️</div>
+          <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--cream);margin-bottom:0.6rem">Zero Waste Policy</h3>
+          <p style="font-size:0.85rem;color:rgba(250,246,240,0.6)">Composting, recycling, and food waste programmes keep us on a path to zero landfill.</p>
+        </div>
+        <div style="text-align:center;padding:2rem">
+          <div style="font-size:2.5rem;margin-bottom:1rem">🌱</div>
+          <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--cream);margin-bottom:0.6rem">Local Sourcing</h3>
+          <p style="font-size:0.85rem;color:rgba(250,246,240,0.6)">Over 80% of our produce comes from farms within 200km, reducing food miles dramatically.</p>
+        </div>
+        <div style="text-align:center;padding:2rem">
+          <div style="font-size:2.5rem;margin-bottom:1rem">☀️</div>
+          <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--cream);margin-bottom:0.6rem">Solar Powered</h3>
+          <p style="font-size:0.85rem;color:rgba(250,246,240,0.6)">60% of our energy needs are met by rooftop solar panels installed in 2022.</p>
+        </div>
+        <div style="text-align:center;padding:2rem">
+          <div style="font-size:2.5rem;margin-bottom:1rem">🫘</div>
+          <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--cream);margin-bottom:0.6rem">Fair Trade Coffee</h3>
+          <p style="font-size:0.85rem;color:rgba(250,246,240,0.6)">All our beans are ethically sourced, directly from certified fair-trade cooperatives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <div class="section-label" style="justify-content:center">Meet the Team</div>
+        <h2 class="display-md">The People Behind<br>Every Cup</h2>
+      </div>
+      <div class="team-grid reveal">
+        <div class="team-card">
+          <div class="team-photo"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=75&auto=format" alt="Arjit Batra, Founder of Urban Spice Café" loading="lazy"></div>
+          <div class="team-name">Arjit Batra</div>
+          <div class="team-role">Founder & Head Barista</div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=75&auto=format" alt="Simran Kaur, Executive Chef" loading="lazy"></div>
+          <div class="team-name">Simran Kaur</div>
+          <div class="team-role">Executive Chef</div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=75&auto=format" alt="Vikram Nair, Café Manager" loading="lazy"></div>
+          <div class="team-name">Vikram Nair</div>
+          <div class="team-role">Café Manager</div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=75&auto=format" alt="Aditi Malhotra, Pastry Chef" loading="lazy"></div>
+          <div class="team-name">Aditi Malhotra</div>
+          <div class="team-role">Pastry Chef</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div style="background:var(--dark-brown);padding:2rem 0;text-align:center">
+    <p style="color:rgba(250,246,240,0.35);font-size:0.8rem">© 2025 Urban Spice Café · <span style="color:var(--gold);cursor:pointer" onclick="showPage('home')">Home</span> · <span style="color:var(--gold);cursor:pointer" onclick="showPage('reservation')">Reserve</span></p>
+  </div>
+</div>
+
+<!-- ========================================
+     PAGE: BLOG
+     ======================================== -->
+<div class="page" id="page-blog">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&q=70&auto=format')"></div>
+    <div style="position:absolute;inset:0;background:rgba(28,15,8,0.6)"></div>
+    <div class="page-hero-content">
+      <div class="breadcrumb"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">Blog</span></div>
+      <h1 class="display-lg">Café Journal</h1>
+    </div>
+  </div>
+  <section class="section-pad">
+    <div class="container">
+      <div class="blog-grid" id="blogGrid"></div>
+    </div>
+  </section>
+  <section class="section-pad bg-ivory">
+    <div class="container text-center">
+      <div class="section-label" style="justify-content:center">Share Your Story</div>
+      <h2 class="display-md" style="margin:0.8rem 0 1rem">Join the Conversation</h2>
+      <p style="color:rgba(28,15,8,0.6);margin-bottom:2rem;font-size:0.95rem">Follow us on Instagram and tag #UrbanSpiceCafé to be featured on our blog.</p>
+      <button class="btn btn-primary" onclick="showPage('contact')"><span>Get in Touch</span></button>
+    </div>
+  </section>
+  <div style="background:var(--dark-brown);padding:2rem 0;text-align:center">
+    <p style="color:rgba(250,246,240,0.35);font-size:0.8rem">© 2025 Urban Spice Café · <span style="color:var(--gold);cursor:pointer" onclick="showPage('home')">Home</span> · <span style="color:var(--gold);cursor:pointer" onclick="showPage('menu')">Menu</span></p>
+  </div>
+</div>
+
+<!-- ========================================
+     PAGE: CONTACT
+     ======================================== -->
+<div class="page" id="page-contact">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=1200&q=70&auto=format')"></div>
+    <div style="position:absolute;inset:0;background:rgba(28,15,8,0.6)"></div>
+    <div class="page-hero-content">
+      <div class="breadcrumb"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">Contact</span></div>
+      <h1 class="display-lg">Say Hello</h1>
+    </div>
+  </div>
+  <section class="section-pad">
+    <div class="container">
+      <div class="contact-layout">
+        <div>
+          <div class="section-label">Reach Out</div>
+          <h2 class="display-md" style="margin:0.8rem 0 1.5rem">We'd Love<br>to Hear from You</h2>
+          <div class="location-detail" style="gap:1rem;margin-bottom:1rem">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" style="stroke:var(--gold);width:20px;height:20px"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            <p style="color:rgba(28,15,8,0.65)">42, Lawrence Road, Civil Lines, Amritsar, Punjab 143001</p>
+          </div>
+          <div class="location-detail" style="gap:1rem;margin-bottom:1rem">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" style="stroke:var(--gold);width:20px;height:20px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8"/></svg>
+            <p style="color:rgba(28,15,8,0.65)">+91 98765 43210<br><small style="color:rgba(28,15,8,0.45)">Mon–Fri 8am–10pm</small></p>
+          </div>
+          <div class="location-detail" style="gap:1rem;margin-bottom:2rem">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" style="stroke:var(--gold);width:20px;height:20px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>
+            <p style="color:rgba(28,15,8,0.65)">hello@urbanspicecafe.in</p>
+          </div>
+          <!-- FAQ -->
+          <h3 class="display-sm" style="margin-bottom:1.5rem">FAQs</h3>
+          <div id="faqContainer"></div>
+        </div>
+        <!-- Contact Form -->
+        <!-- CONVERSION TRACKING POINT: Contact form -->
+        <div>
+          <div style="background:var(--warm-white);padding:2.5rem;border:1px solid rgba(28,15,8,0.07)">
+            <h3 class="display-sm" style="margin-bottom:1.5rem">Send a Message</h3>
+            <form class="contact-form" onsubmit="handleFormSubmit(event,'contact-form')">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input class="form-input" id="contact-name" type="text" placeholder="Priya Sharma" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number</label>
+                  <input class="form-input" id="contact-phone" type="tel" placeholder="+91 98765 43210">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input class="form-input" id="contact-email" type="email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <select class="form-select" id="contact-subject">
+                  <option>General Enquiry</option>
+                  <option>Reservation Help</option>
+                  <option>Feedback</option>
+                  <option>Corporate Events</option>
+                  <option>Press & Media</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Your Message</label>
+                <textarea class="form-textarea" id="contact-message" placeholder="Tell us how we can help..." required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit" style="width:100%"><span>Send Message</span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div style="background:var(--dark-brown);padding:2rem 0;text-align:center">
+    <p style="color:rgba(250,246,240,0.35);font-size:0.8rem">© 2025 Urban Spice Café · <span style="color:var(--gold);cursor:pointer" onclick="showPage('home')">Home</span> · <span style="color:var(--gold);cursor:pointer" onclick="showPage('reservation')">Reserve</span></p>
+  </div>
+</div>
+
+<!-- ========================================
+     PAGE: RESERVATION
+     ======================================== -->
+<div class="page" id="page-reservation">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=70&auto=format')"></div>
+    <div style="position:absolute;inset:0;background:rgba(28,15,8,0.65)"></div>
+    <div class="page-hero-content">
+      <div class="breadcrumb"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">Reservation</span></div>
+      <h1 class="display-lg">Reserve Your Table</h1>
+    </div>
+  </div>
+  <section class="section-pad">
+    <div class="container">
+      <div class="reservation-layout">
+        <div class="res-info-card reveal">
+          <div class="section-label" style="color:var(--soft-gold)">Before You Book</div>
+          <h2 class="display-sm" style="color:var(--cream);margin:0.8rem 0 0.5rem">What to<br>Expect</h2>
+          <p style="color:rgba(250,246,240,0.6);font-size:0.9rem;margin-bottom:2rem">Your table will be held for 15 minutes past the reserved time. We look forward to serving you.</p>
+          <div class="res-perks">
+            <div class="res-perk">
+              <div class="res-perk-icon">🕐</div>
+              <div class="res-perk-text"><strong>Instant Confirmation</strong><p>Receive your booking confirmation via email and SMS within seconds.</p></div>
+            </div>
+            <div class="res-perk">
+              <div class="res-perk-icon">🪑</div>
+              <div class="res-perk-text"><strong>Preferred Seating</strong><p>Request a window seat, al fresco table, or private booth when booking.</p></div>
+            </div>
+            <div class="res-perk">
+              <div class="res-perk-icon">🎂</div>
+              <div class="res-perk-text"><strong>Special Occasions</strong><p>Planning a celebration? Let us know and we'll add a personal touch.</p></div>
+            </div>
+            <div class="res-perk">
+              <div class="res-perk-icon">📞</div>
+              <div class="res-perk-text"><strong>Need Help?</strong><p>Call us on +91 98765 43210 and we'll handle your booking personally.</p></div>
+            </div>
+          </div>
+        </div>
+        <!-- Reservation Form -->
+        <!-- CONVERSION TRACKING POINT: Primary reservation form -->
+        <div>
+          <div class="progress-steps" aria-label="Booking steps">
+            <div class="step active" id="step1"><div class="step-dot">1</div><div class="step-label">Details</div></div>
+            <div class="step" id="step2"><div class="step-dot">2</div><div class="step-label">Review</div></div>
+            <div class="step" id="step3"><div class="step-dot">3</div><div class="step-label">Confirm</div></div>
+          </div>
+          <form class="contact-form" onsubmit="handleReservation(event)" id="reservationForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-name">Full Name</label>
+                <input class="form-input" id="res-name" type="text" placeholder="Arjun Mehta" required>
+              </div>
+              <div class="form-group">
+                <label for="res-phone">Phone Number</label>
+                <input class="form-input" id="res-phone" type="tel" placeholder="+91 98765 43210" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="res-email">Email Address</label>
+              <input class="form-input" id="res-email" type="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-date">Date</label>
+                <input class="form-input" id="res-date" type="date" required>
+              </div>
+              <div class="form-group">
+                <label for="res-time">Time</label>
+                <select class="form-select" id="res-time" required>
+                  <option value="">Select time</option>
+                  <option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option>
+                  <option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option>
+                  <option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option>
+                  <option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option>
+                  <option>8:00 PM</option><option>9:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Number of Guests</label>
+              <div class="guest-selector" id="guestSelector" role="group" aria-label="Number of guests">
+                <button type="button" class="guest-btn selected" onclick="selectGuests(1,this)">1</button>
+                <button type="button" class="guest-btn" onclick="selectGuests(2,this)">2</button>
+                <button type="button" class="guest-btn" onclick="selectGuests(3,this)">3</button>
+                <button type="button" class="guest-btn" onclick="selectGuests(4,this)">4</button>
+                <button type="button" class="guest-btn" onclick="selectGuests(5,this)">5</button>
+                <button type="button" class="guest-btn" onclick="selectGuests(6,this)">6+</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="res-seating">Seating Preference</label>
+              <select class="form-select" id="res-seating">
+                <option>No Preference</option>
+                <option>Window Seat</option>
+                <option>Al Fresco / Outdoor</option>
+                <option>Private Booth</option>
+                <option>Bar Seating</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="res-notes">Special Requests</label>
+              <textarea class="form-textarea" id="res-notes" placeholder="Birthday celebration, dietary restrictions, high chair needed..." style="min-height:90px"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit" style="width:100%;padding:1.1rem"><span>Confirm Reservation →</span></button>
+            <p style="font-size:0.78rem;color:rgba(28,15,8,0.45);text-align:center;margin-top:0.8rem">By reserving, you agree to our booking policy. Cancellations accepted up to 2 hours before.</p>
+          </form>
+          <!-- Confirmation Message (hidden) -->
+          <div id="reservationConfirm" style="display:none;text-align:center;padding:3rem 2rem;background:var(--warm-white)">
+            <div style="font-size:3rem;margin-bottom:1rem">✅</div>
+            <h3 class="display-sm" style="margin-bottom:0.8rem">Reservation Confirmed!</h3>
+            <p style="color:rgba(28,15,8,0.6);font-size:0.95rem;margin-bottom:1.5rem">Thank you! Your table has been reserved. A confirmation has been sent to your email and phone.</p>
+            <button class="btn btn-outline" onclick="showPage('menu')"><span>Explore Our Menu</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div style="background:var(--dark-brown);padding:2rem 0;text-align:center">
+    <p style="color:rgba(250,246,240,0.35);font-size:0.8rem">© 2025 Urban Spice Café · <span style="color:var(--gold);cursor:pointer" onclick="showPage('home')">Home</span> · <span style="color:var(--gold);cursor:pointer" onclick="showPage('contact')">Contact</span></p>
+  </div>
+</div>
+
+<!-- ========================================
+     PAGE: GALLERY
+     ======================================== -->
+<div class="page" id="page-gallery">
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=1200&q=70&auto=format')"></div>
+    <div style="position:absolute;inset:0;background:rgba(28,15,8,0.5)"></div>
+    <div class="page-hero-content">
+      <div class="breadcrumb"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">Gallery</span></div>
+      <h1 class="display-lg">Gallery</h1>
+    </div>
+  </div>
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <div class="section-label" style="justify-content:center">Visual Stories</div>
+        <h2 class="display-md">Life at Urban Spice</h2>
+      </div>
+      <div class="gallery-masonry" id="galleryGrid"></div>
+    </div>
+  </section>
+  <section class="section-pad bg-ivory">
+    <div class="container text-center">
+      <h2 class="display-md" style="margin-bottom:1rem">Experience it in Person</h2>
+      <p style="color:rgba(28,15,8,0.6);margin-bottom:2rem;font-size:0.95rem">Reserve your table and step into the warmth of Urban Spice Café.</p>
+      <button class="btn btn-primary" onclick="showPage('reservation')"><span>Reserve a Table</span></button>
+    </div>
+  </section>
+  <div style="background:var(--dark-brown);padding:2rem 0;text-align:center">
+    <p style="color:rgba(250,246,240,0.35);font-size:0.8rem">© 2025 Urban Spice Café · <span style="color:var(--gold);cursor:pointer" onclick="showPage('home')">Home</span> · <span style="color:var(--gold);cursor:pointer" onclick="showPage('menu')">Menu</span></p>
+  </div>
+</div>
+
+<script>
+// ============ DATA ============
+const menuItems = [
+  // Coffee
+  { id:1, cat:'coffee', name:'Signature Espresso', desc:'Double shot with notes of dark chocolate and dried fruit. Our house blend roasted in-house.', price:'₹180', img:'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=70&auto=format', alt:'Signature espresso shot at Urban Spice Café' },
+  { id:2, cat:'coffee', name:'Cortado', desc:'Equal parts espresso and steamed milk for a perfectly balanced, silky experience.', price:'₹220', img:'https://images.unsplash.com/photo-1534778101976-62847782c213?w=400&q=70&auto=format', alt:'Cortado coffee with latte art' },
+  { id:3, cat:'coffee', name:'Cold Brew', desc:'18-hour slow-brew, served over ice with a caramel drizzle. Smooth and refreshing.', price:'₹249', img:'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=70&auto=format', alt:'Cold brew coffee in glass jar' },
+  { id:4, cat:'coffee', name:'Flat White', desc:'Ristretto shots topped with microfoam milk – intense and velvety.', price:'₹210', img:'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&q=70&auto=format', alt:'Flat white coffee' },
+  // Tea
+  { id:5, cat:'tea', name:'Masala Chai', desc:'Our secret masala blend with Assam CTC tea, ginger, and cardamom. A warm hug in a cup.', price:'₹120', img:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&q=70&auto=format', alt:'Masala chai tea in traditional glass' },
+  { id:6, cat:'tea', name:'Darjeeling First Flush', desc:'Premium single-origin Darjeeling tea, delicate and floral with a golden liquor.', price:'₹160', img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70&auto=format', alt:'Premium Darjeeling tea' },
+  { id:7, cat:'tea', name:'Matcha Latte', desc:'Japanese ceremonial-grade matcha whisked with oat milk. Earthy, creamy, and vibrant.', price:'₹260', img:'https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?w=400&q=70&auto=format', alt:'Matcha latte with foam art' },
+  // Cold
+  { id:8, cat:'cold', name:'Mango Chilli Fizz', desc:'Fresh Alphonso mango, a pinch of tajin, topped with sparkling water. Bold and tropical.', price:'₹199', img:'https://images.unsplash.com/photo-1497534446932-c925b458314e?w=400&q=70&auto=format', alt:'Mango chilli fizz cold drink' },
+  { id:9, cat:'cold', name:'Berry Hibiscus Cooler', desc:'Hibiscus flower, blueberry, and raspberry blended with coconut water and mint.', price:'₹210', img:'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&q=70&auto=format', alt:'Berry hibiscus cooler drink' },
+  // Desserts
+  { id:10, cat:'desserts', name:'Valrhona Chocolate Tart', desc:'Bittersweet Valrhona ganache in a buttery almond crust, served with sea salt.', price:'₹320', img:'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=70&auto=format', alt:'Chocolate tart dessert at Urban Spice' },
+  { id:11, cat:'desserts', name:'Pistachio Rose Cake', desc:'Three-layer sponge with pistachio cream and rose water frosting. Showstopper elegance.', price:'₹350', img:'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&q=70&auto=format', alt:'Pistachio rose cake slice' },
+  { id:12, cat:'desserts', name:'Croissant au Beurre', desc:'Classic laminated butter croissant baked fresh every morning. Flaky, golden, perfect.', price:'₹180', img:'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=70&auto=format', alt:'Fresh butter croissant pastry' },
+  // Breakfast
+  { id:13, cat:'breakfast', name:'Avocado Toast', desc:'Sourdough, smashed avocado, poached eggs, everything bagel seasoning, and chilli flakes.', price:'₹360', img:'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&q=70&auto=format', alt:'Avocado toast with poached eggs' },
+  { id:14, cat:'breakfast', name:'Shakshuka', desc:'Eggs poached in a spiced tomato-pepper sauce, served with sourdough soldiers.', price:'₹320', img:'https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=400&q=70&auto=format', alt:'Shakshuka with eggs and vegetables' },
+  { id:15, cat:'breakfast', name:'Acai Granola Bowl', desc:'Wild blueberry acai base, house granola, fresh seasonal fruits, and honey.', price:'₹340', img:'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=400&q=70&auto=format', alt:'Acai granola bowl with fresh fruit' },
+  // Main
+  { id:16, cat:'main', name:'Truffle Mushroom Risotto', desc:'Arborio rice, roasted wild mushrooms, parmesan, and black truffle oil. Pure comfort.', price:'₹580', img:'https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=400&q=70&auto=format', alt:'Truffle mushroom risotto dish' },
+  { id:17, cat:'main', name:'Grilled Chicken Pesto Pasta', desc:'Spaghetti with basil pesto, grilled chicken breast, cherry tomatoes, and pine nuts.', price:'₹520', img:'https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=400&q=70&auto=format', alt:'Pesto pasta with grilled chicken' },
+  { id:18, cat:'main', name:'Spiced Paneer Salad', desc:'Grilled paneer tikka on a bed of mixed greens, pomegranate, and tandoori dressing.', price:'₹420', img:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=70&auto=format', alt:'Grilled paneer salad with vegetables' },
+];
+
+const blogPosts = [
+  { title:'Best Coffee in Punjab: Urban Spice Tops the List', cat:'Coffee', date:'May 12, 2025', excerpt:'Discover why Urban Spice Café has earned its reputation as Punjab\'s premier coffee destination, from our single-origin beans to the craft behind every cup.', img:'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=70&auto=format', alt:'Coffee beans and espresso at Urban Spice Café', slug:'best-coffee-punjab' },
+  { title:'Top 5 Café Drinks to Try This Summer', cat:'Beverages', date:'Apr 28, 2025', excerpt:'Beat the Punjab heat with our baristas\' top picks for summer 2025 — from cold brew variations to our signature mango chilli fizz that\'s taking the city by storm.', img:'https://images.unsplash.com/photo-1497534446932-c925b458314e?w=600&q=70&auto=format', alt:'Summer cold drinks at Urban Spice Café', slug:'top-cafe-drinks-summer' },
+  { title:'Why Organic Coffee Matters More Than You Think', cat:'Wellness', date:'Apr 10, 2025', excerpt:'We break down the science and ethics behind organic coffee farming — and why the beans in your cup have a direct impact on soil health, farmer livelihoods, and your own wellbeing.', img:'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=70&auto=format', alt:'Organic coffee farm and beans', slug:'why-organic-coffee-matters' },
+  { title:'How Urban Spice Creates Premium Experiences', cat:'Behind the Scenes', date:'Mar 22, 2025', excerpt:'A peek inside our kitchen, bar, and design process — how we obsess over every detail, from the temperature of your cortado to the ambient playlist that sets the mood.', img:'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=70&auto=format', alt:'Urban Spice Café interior and barista', slug:'urban-spice-premium-experience' },
+  { title:'Our Sustainability Journey: From Farm to Cup', cat:'Sustainability', date:'Mar 5, 2025', excerpt:'2024 marked a milestone year for us — going 60% solar, cutting food waste by 40%, and building direct trade partnerships with three new Indian farms.', img:'https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&q=70&auto=format', alt:'Sustainable farming and coffee production', slug:'sustainability-farm-to-cup' },
+  { title:'A Guide to Amritsar\'s Café Culture', cat:'City Guide', date:'Feb 18, 2025', excerpt:'Amritsar is blooming into a café city. We explore the growing scene, neighbourhood favourites, and how Urban Spice fits into the city\'s evolving culinary identity.', img:'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=70&auto=format', alt:'Amritsar café culture and street scenes', slug:'amritsar-cafe-culture-guide' },
+];
+
+const galleryImages = [
+  { url:'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=70&auto=format', alt:'Urban Spice Café cozy interior with warm lighting' },
+  { url:'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=70&auto=format', alt:'Artisan espresso being prepared by barista' },
+  { url:'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=70&auto=format', alt:'Fresh pastries and croissants on display' },
+  { url:'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&q=70&auto=format', alt:'Avocado toast breakfast plating' },
+  { url:'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=70&auto=format', alt:'Café seating area with natural light' },
+  { url:'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=70&auto=format', alt:'Chocolate dessert plating at Urban Spice' },
+  { url:'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=70&auto=format', alt:'Coffee being poured with latte art' },
+  { url:'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=70&auto=format', alt:'Table setting for dining at Urban Spice Café' },
+  { url:'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=70&auto=format', alt:'Outdoor seating area of Urban Spice Café' },
+  { url:'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=70&auto=format', alt:'Premium coffee beans selection' },
+  { url:'https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&q=70&auto=format', alt:'Risotto main course dish presentation' },
+  { url:'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=600&q=70&auto=format', alt:'Acai bowl with fresh fruit toppings' },
+];
+
+const faqs = [
+  { q:'Do you accept walk-ins or is reservation required?', a:'We welcome both walk-ins and reservations. However, for weekends and evenings, we strongly recommend booking a table in advance to guarantee your spot.' },
+  { q:'Do you have vegan and gluten-free options?', a:'Absolutely! Over 60% of our menu can be made vegan or gluten-free on request. Our staff will guide you through the available options.' },
+  { q:'Is there parking available?', a:'Yes, we have dedicated parking for 30 vehicles adjacent to the café. Additional street parking is available on Lawrence Road.' },
+  { q:'Can I host a private event at Urban Spice?', a:'We offer full café buyouts and private dining experiences for corporate events, birthdays, and special occasions. Contact us for packages.' },
+  { q:'Do you offer home delivery?', a:'We partner with Zomato and Swiggy for delivery within a 5km radius of our Amritsar location.' },
+];
+
+// ============ PAGE ROUTER ============
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + pageId).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Update nav active state
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.dataset.page === pageId);
+  });
+
+  // Lazy render dynamic content
+  if (pageId === 'menu' && !document.getElementById('menuGrid').children.length) renderMenu('all');
+  if (pageId === 'blog' && !document.getElementById('blogGrid').children.length) renderBlog();
+  if (pageId === 'gallery' && !document.getElementById('galleryGrid').children.length) renderGallery();
+  if (pageId === 'contact' && !document.getElementById('faqContainer').children.length) renderFAQ();
+
+  // Init reveals on new page
+  setTimeout(initReveal, 100);
+
+  // Update meta title for SEO simulation
+  const titles = {
+    home: 'Urban Spice Café | Best Café in Punjab – Coffee, Food & Ambience',
+    menu: 'Menu | Urban Spice Café – Coffee, Desserts, Breakfast & More',
+    about: 'About Us | Urban Spice Café Story & Team – Amritsar, Punjab',
+    blog: 'Blog | Café Journal – Coffee, Food & Lifestyle | Urban Spice',
+    contact: 'Contact Urban Spice Café | Call, Email & Find Us',
+    reservation: 'Reserve a Table | Urban Spice Café – Book Online',
+    gallery: 'Gallery | Urban Spice Café – Photos of Food, Coffee & Ambience',
+  };
+  document.title = titles[pageId] || titles.home;
+}
+
+// ============ RENDER MENU ============
+function renderMenu(filter) {
+  const grid = document.getElementById('menuGrid');
+  const items = filter === 'all' ? menuItems : menuItems.filter(i => i.cat === filter);
+  grid.innerHTML = items.map(item => `
+    <article class="menu-item-card" itemscope itemtype="https://schema.org/MenuItem">
+      <div class="menu-item-img">
+        <img src="${item.img}" alt="${item.alt}" loading="lazy" itemprop="image">
+      </div>
+      <div class="menu-item-body">
+        <div class="menu-item-category">${item.cat.charAt(0).toUpperCase()+item.cat.slice(1)}</div>
+        <h3 class="menu-item-name" itemprop="name">${item.name}</h3>
+        <p class="menu-item-desc" itemprop="description">${item.desc}</p>
+        <div class="menu-item-footer">
+          <span class="menu-item-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price">${item.price}</span></span>
+          <button class="menu-item-add" aria-label="Add ${item.name} to order" onclick="addToOrder('${item.name}')">+</button>
+        </div>
+      </div>
+    </article>
+  `).join('');
+}
+
+function filterMenu(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderMenu(cat);
+}
+
+function addToOrder(name) {
+  // CONVERSION TRACKING POINT: Add to order event
+  // gtag('event', 'add_to_cart', { item_name: name });
+  showToast(`${name} added! Reserve a table to enjoy it.`);
+}
+
+// ============ RENDER BLOG ============
+function renderBlog() {
+  document.getElementById('blogGrid').innerHTML = blogPosts.map(post => `
+    <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+      <div class="blog-img">
+        <span class="blog-cat">${post.cat}</span>
+        <img src="${post.img}" alt="${post.alt}" loading="lazy" itemprop="image">
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta" itemprop="datePublished">${post.date} · Urban Spice Team</div>
+        <h2 class="blog-title" itemprop="headline">${post.title}</h2>
+        <p class="blog-excerpt" itemprop="description">${post.excerpt}</p>
+        <span class="blog-read-more" onclick="showToast('Full blog posts coming soon!')">Read More →</span>
+      </div>
+    </article>
+  `).join('');
+}
+
+// ============ RENDER GALLERY ============
+function renderGallery() {
+  document.getElementById('galleryGrid').innerHTML = galleryImages.map((img,i) => `
+    <div class="gallery-item" onclick="openLightbox('${img.url}','${img.alt}')">
+      <img src="${img.url}" alt="${img.alt}" loading="lazy">
+      <div class="gallery-overlay">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ============ RENDER FAQ ============
+function renderFAQ() {
+  document.getElementById('faqContainer').innerHTML = faqs.map((faq,i) => `
+    <div class="faq-item" onclick="toggleFAQ(this)">
+      <div class="faq-q"><p>${faq.q}</p><span>+</span></div>
+      <div class="faq-a">${faq.a}</div>
+    </div>
+  `).join('');
+}
+
+function toggleFAQ(el) {
+  el.classList.toggle('open');
+}
+
+// ============ LIGHTBOX ============
+function openLightbox(src, alt) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightboxImg').alt = alt;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) closeLightbox();
+});
+
+// ============ FORMS ============
+function handleFormSubmit(e, formType) {
+  e.preventDefault();
+  // CONVERSION TRACKING POINT: Form submission
+  // gtag('event', 'form_submit', { form_type: formType });
+  showToast('Message sent! We\'ll get back to you within 24 hours.');
+  e.target.reset();
+}
+
+function handleNewsletterSubmit(e) {
+  e.preventDefault();
+  // CONVERSION TRACKING POINT: Newsletter subscription
+  // gtag('event', 'newsletter_signup');
+  showToast('Welcome! You\'ve successfully subscribed. 🎉');
+  e.target.reset();
+}
+
+function handleReservation(e) {
+  e.preventDefault();
+  // CONVERSION TRACKING POINT: Table reservation - primary conversion
+  // gtag('event', 'reservation_complete', { value: 1 });
+  document.getElementById('reservationForm').style.display = 'none';
+  document.getElementById('reservationConfirm').style.display = 'block';
+  document.getElementById('step1').classList.remove('active'); document.getElementById('step1').classList.add('done');
+  document.getElementById('step2').classList.add('done');
+  document.getElementById('step3').classList.add('active','done');
+}
+
+let selectedGuests = 1;
+function selectGuests(n, btn) {
+  selectedGuests = n;
+  document.querySelectorAll('.guest-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+}
+
+// ============ MOBILE MENU ============
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const hamburger = document.getElementById('hamburger');
+  menu.classList.toggle('open');
+  hamburger.classList.toggle('open');
+  document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+}
+
+// ============ NAV SCROLL ============
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('mainNav');
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+  document.getElementById('stickyCta').classList.toggle('visible', window.scrollY > 400);
+});
+
+// ============ SCROLL REVEAL ============
+function initReveal() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => observer.observe(el));
+}
+
+// ============ TOAST ============
+function showToast(msg) {
+  const toast = document.createElement('div');
+  toast.style.cssText = `
+    position:fixed;bottom:5rem;left:50%;transform:translateX(-50%) translateY(20px);
+    background:var(--espresso);color:var(--cream);padding:0.9rem 1.8rem;
+    font-family:var(--font-body);font-size:0.88rem;z-index:9999;
+    opacity:0;transition:all 0.3s ease;border-left:3px solid var(--gold);
+    max-width:90vw;text-align:center;pointer-events:none;
+  `;
+  toast.textContent = msg;
+  document.body.appendChild(toast);
+  requestAnimationFrame(() => { toast.style.opacity='1'; toast.style.transform='translateX(-50%) translateY(0)'; });
+  setTimeout(() => {
+    toast.style.opacity='0'; toast.style.transform='translateX(-50%) translateY(-20px)';
+    setTimeout(() => toast.remove(), 300);
+  }, 3500);
+}
+
+// ============ SET MIN DATE FOR RESERVATION ============
+const today = new Date().toISOString().split('T')[0];
+const dateInput = document.getElementById('res-date');
+if (dateInput) dateInput.min = today;
+
+// ============ INIT ============
+document.addEventListener('DOMContentLoaded', () => {
+  initReveal();
+  // Initialize menu with 'all' filter when first visited
+});
+
+// Keyboard close for lightbox
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+
+<!-- 
+===========================================
+SEO & TECHNICAL RECOMMENDATIONS
+===========================================
+
+ROBOTS.TXT (create at /robots.txt):
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Sitemap: https://www.urbanspicecafe.in/sitemap.xml
+
+SITEMAP.XML (create at /sitemap.xml):
+- https://www.urbanspicecafe.in/ (homepage, priority 1.0)
+- https://www.urbanspicecafe.in/menu/ (priority 0.9)
+- https://www.urbanspicecafe.in/about/ (priority 0.8)
+- https://www.urbanspicecafe.in/reservation/ (priority 0.9)
+- https://www.urbanspicecafe.in/blog/ (priority 0.8)
+- https://www.urbanspicecafe.in/gallery/ (priority 0.7)
+- https://www.urbanspicecafe.in/contact/ (priority 0.7)
+
+GOOGLE ANALYTICS INTEGRATION:
+Add before </head>:
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+CONVERSION EVENTS TO TRACK:
+1. reservation_complete - Table reservation form submit
+2. newsletter_signup - Newsletter form submit
+3. contact_form_submit - Contact form submit
+4. menu_add_to_order - Menu item + button click
+5. cta_click - Any CTA button click
+6. page_view - All page navigations
+
+IMAGE OPTIMIZATION STRATEGY:
+- Use WebP format for all images
+- Implement srcset for responsive images
+- Compress all images to <100KB where possible
+- Use CDN (Cloudflare) for image delivery
+- All images have descriptive alt texts (implemented)
+
+CORE WEB VITALS OPTIMIZATION:
+- Preconnect to Google Fonts (implemented)
+- Lazy loading on all below-fold images (implemented)
+- CSS animations use transform/opacity only (GPU-accelerated)
+- Minimal JavaScript, no heavy frameworks
+===========================================
+-->
+
+</body>
+</html>
